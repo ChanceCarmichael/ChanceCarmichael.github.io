@@ -5,6 +5,29 @@
 <header>
 
 <body>
+  <h1>Using the Boomerang C Decompiler</h1>
+    <ol>
+      <li>
+        Download the decompiler from 
+        <a href="http://boomerang.sourceforge.net/download.php">
+          Sourceforge
+        </a>
+        .
+      </li>
+      <li>
+        Download the following dependencies:
+        <pre>
+          <code>
+            sudo apt-get install libgc1c2:i386 libexpat1-dev:i386 lib32stdc++6 lib32z1 lib32z1-dev
+          </code>
+        </pre>
+        The above represent the 32bit dependency files that might be missing if you're using 64bit.
+      </li>
+      <li>
+        cd to your boomerang file and use the ./boomerang "<"<i>binary file name</i>">"
+      </li>
+     
+    </ol>
 </body>
 
 <footer>
