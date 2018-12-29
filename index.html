@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 
-<header>
+<head>
   <title>Adam Horeth's Github World</title>
-<header>
+  <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+<head>
 
 <body>
   <h1>Using the Boomerang C Decompiler</h1>
     <ol>
       <li>
         Download the decompiler from 
-        <a href="http://boomerang.sourceforge.net/download.php">
-          Sourceforge
-        </a>
-        .
+        <a href="http://boomerang.sourceforge.net/download.php">Sourceforge</a>.
       </li>
       <li>
-        Download the following dependencies:
-        <pre>
-          <code>
-            sudo apt-get install libgc1c2:i386 libexpat1-dev:i386 lib32stdc++6 lib32z1 lib32z1-dev
-          </code>
-        </pre>
+        Boomerang requires the libgc and libexpat dependencies. Download them thusly:
+        <pre><code>sudo apt-get install libgc1c2:i386 libexpat1-dev:i386 lib32stdc++6 lib32z1 lib32z1-dev</code></pre>
         The above represent the 32bit dependency files that might be missing if you're using 64bit.
+        &nbsp;
       </li>
       <li>
-        cd to your boomerang file and use the ./boomerang "<"<i>binary file name</i>">"
+        cd to your boomerang file and use the ./boomerang <<i>binary file name</i>> or put it in your PATH.
       </li>
      
     </ol>
